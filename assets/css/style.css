@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4em;
+    width: 1021.6px;
+    height: 826px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 241.1px;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.2em;
+    line-height: .9em;
+}
+
+.info-container,
+.rate-container {
+    width: 50%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4em;
+    width: 75%;
+}
+
+.info-container p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 700;
+    font-size: 0.9375em;
+    line-height: 1.5em;
+}
+
+.rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.rate-container p {
+    color: hsl(300, 43%, 22%);
+}
+
+.rated-container {
+    display: flex;
+    column-gap: 1.5em;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: .4em;
+    padding: 1em 3em 1em 2em;
+    font-weight: 700;
+}
+
+.rated-container:nth-child(1) {
+    align-self: flex-start;
+}
+
+.rated-container:nth-child(2) {
+    align-self: center;
+}
+
+.rated-container:nth-child(3) {
+    align-self: flex-end;
+}
+
+/* Section Review Container */
+.section-review-container {
+    height: 231.1px;
+}
+
+.review-container {
+    display: flex;
+    column-gap: 2em;
+    height: 100%;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3em;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: .5em;
+    height: 206.4px;
+    padding: 2.2em 2em;
+}
+
+.user-container:nth-child(1) {
+    align-self: flex-start;
+}
+
+.user-container:nth-child(2) {
+    align-self: center;
+}
+
+.user-container:nth-child(3) {
+    align-self: flex-end;
+}
+
+span:first-child,
+.review-container p {
+    color: hsl(0, 0%, 100%);
+}
+
+.user-info {
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.user-info img {
+    border-radius: 50%;
+    height: 2.2em;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+}
+
+span+span {
+    color: hsl(333, 80%, 67%);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 992px) {
+    body {
+        height: 1300px;
+        justify-content: center;
+    }
+
+    .container {
+        width: 313px;
+        height: 1186.15px;
+        row-gap: 1.6em;
+        margin-bottom: 1em;
+    }
+
+    /* Main Container */
+    .info-container,
+    .rate-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rate-container {
+        row-gap: .8em;
+    }
+
+    .rated-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rated-container:nth-child(1),
+    .rated-container:nth-child(2),
+    .rated-container:nth-child(3) {
+        align-self: center;
+    }
+
+    .main-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* Section Review Container */
+    .section-review-container {
+        height: 100%;
+    }
+
+    .review-container {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .user-container {
+        padding: 1.5em 2em;
+    }
+}
